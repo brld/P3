@@ -1,6 +1,6 @@
 <?php
 
-namespace app;
+namespace P3;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 

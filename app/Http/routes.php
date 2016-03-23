@@ -11,8 +11,8 @@ Route::group(['middleware' => ['web']], function () {
 
   Route::post('/lorem-ipsum', 'LoremController@postLorem');
 
-  Route::get('/user-generator', 'LoremController@getLorem');
+  Route::get('/user-generator', 'LoremController@getUser');
 
-  Route::post('/user-generator', 'LoremController@postLorem');
+  Route::post('/user-generator', 'LoremController@postUser');
 
 });

@@ -1,28 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace P3\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use P3\Http\Controllers\Controller;
 
-class BookController extends Controller {
-
-    /**
-    * Responds to requests to GET /books
-    */
-    public function getIndex() {
-      return 'List all the books';
-    }
-
-    /**
-     * Responds to requests to GET /books/show/{id}
-     */
-    public function getShow($id) {
-      return 'Show book: '.$id;
-    }
-
-    /**
-     * Responds to requests to GET /books/create
-     */
+class LoremController extends Controller {
     public function getLorem() {
       $view  = '<form method="POST" action="/lorem-ipsum">';
       $view .= csrf_field();
