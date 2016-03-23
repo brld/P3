@@ -25,7 +25,7 @@
             "database"
         ],
         "psr-4": {
-            "Foobooks\\": "app/"
+            "app\\": "app/"
         }
     },
     "autoload-dev": {

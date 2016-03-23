@@ -1,6 +1,6 @@
 <?php
 
-namespace Foobooks;
+namespace app;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 

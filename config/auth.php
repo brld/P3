@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Foobooks\User::class,
+            'model' => app\User::class,
         ],
 
         // 'users' => [
