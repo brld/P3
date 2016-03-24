@@ -15,4 +15,8 @@ Route::group(['middleware' => ['web']], function () {
 
   Route::post('/user-generator', 'LoremController@postUser');
 
+  Route::get('/practice', function () {
+      
+  });
+
 });

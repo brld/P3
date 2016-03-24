@@ -19,7 +19,9 @@ class LoremController extends Controller {
      * Responds to requests to POST /books/create
      */
     public function postLorem() {
-      return 'Here is your '.$_POST['title'].' paragraph lorem ipsum text! Coming soon!';
+      $generator = new Badcow\LoremIpsum\Generator();
+      $paragraphs = $generator->getParagraphs($_POST);
+      echo implode('<p>', $paragraphs);
     }
 
     public function getUser() {
