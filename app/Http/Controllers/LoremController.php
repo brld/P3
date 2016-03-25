@@ -2,6 +2,7 @@
 
 namespace P3\Http\Controllers;
 
+require_once '/path/to/Faker/src/autoload.php';
 use P3\Http\Controllers\Controller;
 
 class LoremController extends Controller {
@@ -35,6 +36,12 @@ class LoremController extends Controller {
     }
 
     public function postUser() {
-      return 'Here are '.$_POST['title'].' people for you. Coming soon!';
+      $faker = Faker\Factory::create();
+      for ($i=0; $i < $numPeople; $i++) {
+        echo $faker->name;
+        echo $faker->address;
+      }
+
+
     }
 }
