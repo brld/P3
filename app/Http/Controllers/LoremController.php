@@ -26,22 +26,12 @@ class LoremController extends Controller {
     }
 
     public function getUser() {
-      $view  = '<form method="POST" action="/user-generator">';
-      $view .= csrf_field();
-      $view .= 'Number of people: <input type="text" name="title" value="5">';
-      $view .= 'Include Address? <input type="checkbox" name="address">';
-      $view .= 'Include Company? <input type="checkbox" name="company">';
-      $view .= 'Include Phone number? <input type="checkbox" name="phonenumber">';
-      $view .= 'Include Age? <input type="checkbox" name="age">';
-      $view .= '<input type="submit">';
-      $view .= '</form>';
-
-      return $view;
+      return view('user');
     }
 
     public function postUser(Request $request) {
       $faker = \Faker\Factory::create();
-      $numPeople = $request->input('title');
+      $numPeople = $request->input('people');
       $includeAddress = $request->input('address');
       $includeCompany = $request->input('company');
       $includePhoneNumber = $request->input('phonenumber');
@@ -65,7 +55,7 @@ class LoremController extends Controller {
           echo (", ");
         }
         if ($includeAge == TRUE) {
-          echo $faker->numberBetween($min = 20, $max = 80);
+          echo $faker->numberBetween($min = 20, $max = 80)." years old";
           echo (", ");
         }
 
