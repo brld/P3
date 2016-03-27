@@ -17,7 +17,7 @@
         type="text"
         id="userinput"
         name="people"
-        value="10"
+        value="5"
         maxlength="2"
       >
       <div class="error">{{ $errors->first('people') }}</div>

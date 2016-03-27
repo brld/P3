@@ -17,7 +17,7 @@
         type="text"
         id="loreminput"
         name="number"
-        value="10"
+        value="3"
         maxlength="2"
       >
       <div class="error">{{ $errors->first('number') }}</div>
