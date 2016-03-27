@@ -14,8 +14,13 @@ class LoremController extends Controller {
      * Responds to requests to POST /books/create
      */
     public function postLorem(Request $request) {
+
+      $this->validate($request, [
+        'number' => 'required|max:99'
+      ]);
+
       $generator = new \Badcow\LoremIpsum\Generator();
-      $paragraphs = $generator->getParagraphs($request->input('amount'));
+      $paragraphs = $generator->getParagraphs($request->input('number'));
       echo implode('<p>', $paragraphs);
     }
 

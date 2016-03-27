@@ -12,7 +12,7 @@
     {{ csrf_field() }}
 
     <div class="user-input">
-      <label>* Number of people:</label>
+      <label>* Number of people (99 Maximum):</label>
       <input
         type="text"
         id="userinput"

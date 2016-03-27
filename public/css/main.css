@@ -1,9 +1,7 @@
 html,body,head,a,h1,h2,h3,h4,h5,h6,pre,sup,sub /* CSS Reset */
-{ margin: 0px;
+{
+  margin: 0px;
   padding: 0px;
-}
-
-* {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -68,6 +66,16 @@ label {
 
 p {
   padding-left: 3%;
+}
+
+#indexp {
+  font-size: 125%;
+  margin-right: 3%;
+}
+
+#indexh1 {
+  font-size: 225%;
+  margin-right: 3%;
 }
 
 h1 {

@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>
-        @yield('title','Info Generator')
+        @yield('title','Developer Helper')
     </title>
 
     <meta charset='utf-8'>

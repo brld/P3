@@ -12,15 +12,15 @@
     {{ csrf_field() }}
 
     <div class="lorem-input">
-      <label>* Number of paragraphs (Max 99):</label>
+      <label>* Number of paragraphs (99 Maximum):</label>
       <input
         type="text"
         id="loreminput"
-        name="amount"
+        name="number"
         value="10"
         maxlength="2"
       >
-      <div class="error">{{ $errors->first('amount') }}</div>
+      <div class="error">{{ $errors->first('number') }}</div>
 
       <button type="submit" class="btn-lorem">Generate</button>
 
