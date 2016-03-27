@@ -1,0 +1,90 @@
+html,body,head,a,h1,h2,h3,h4,h5,h6,pre,sup,sub /* CSS Reset */
+{ margin: 0px;
+  padding: 0px;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    position:relative;
+    min-height:100%;
+}
+
+footer {
+    position: absolute;
+    left:0;
+    bottom:0;
+    height:30px;
+    width:100%;
+    background-color:#ccc;
+    text-align:center;
+    padding:15px 0px 5px 0px;
+}
+
+nav ul li {
+  display:inline;
+  background-color:#4d9900;
+  padding:5px 10px;
+  margin-right:5px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+label {
+  margin-top:8px;
+  display:block;
+}
+
+.error {
+  color:red;
+  margin:0;
+  margin-top:5px;
+  padding:0;
+  list-style-type:none;
+}
+
+.btn-users,.btn-lorem {
+  background-color: #0052cc;
+  border: none;
+  color: white;
+  padding: 5px 10px 7px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 20px 0px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+p {
+  padding-left: 3%;
+}
+
+h1 {
+  padding-left: 3%;
+  font-size: 200%;
+  margin-top: 1%;
+}
+
+form {
+  padding-left: 3%;
+  display: block;
+}
+
+header {
+  left:0;
+  bottom:0;
+  width:100%;
+  background-color:#ccc;
+  padding:5px 0px 5px 0px;
+}

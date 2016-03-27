@@ -7,21 +7,15 @@ use Illuminate\Http\Request;
 
 class LoremController extends Controller {
     public function getLorem() {
-      $view  = '<form method="POST" action="/lorem-ipsum">';
-      $view .= csrf_field();
-      $view .= 'Number of paragraphs: <input type="text" name="title">';
-      $view .= '<input type="submit">';
-      $view .= '</form>';
-
-      return $view;
+      return view('lorem');
     }
 
     /**
      * Responds to requests to POST /books/create
      */
-    public function postLorem() {
+    public function postLorem(Request $request) {
       $generator = new \Badcow\LoremIpsum\Generator();
-      $paragraphs = $generator->getParagraphs($_POST['title']);
+      $paragraphs = $generator->getParagraphs($request->input('amount'));
       echo implode('<p>', $paragraphs);
     }
 
@@ -30,6 +24,11 @@ class LoremController extends Controller {
     }
 
     public function postUser(Request $request) {
+
+      $this->validate($request, [
+        'people' => 'required|max:99'
+      ]);
+
       $faker = \Faker\Factory::create();
       $numPeople = $request->input('people');
       $includeAddress = $request->input('address');

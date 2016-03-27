@@ -1,3 +1,5 @@
+@extends('master')
+
 @section('title')
   Random Users
 @stop
@@ -6,6 +8,9 @@
 
   <h1>Random User Generator</h1>
   <form method="POST" action="/user-generator">
+
+    {{ csrf_field() }}
+
     <div class="user-input">
       <label>* Number of people:</label>
       <input
@@ -17,7 +22,7 @@
       >
       <div class="error">{{ $errors->first('people') }}</div>
 
-      <label>* Include Address?</label>
+      <label>Include Address?</label>
       <input
         type="checkbox"
         id="userinput"
@@ -25,7 +30,7 @@
       >
       <div class="error">{{ $errors->first('address') }}</div>
 
-      <label>* Include Company?</label>
+      <label>Include Company?</label>
       <input
         type="checkbox"
         id="userinput"
@@ -33,7 +38,7 @@
       >
       <div class="error">{{ $errors->first('company') }}</div>
 
-      <label>* Include Phone Number?</label>
+      <label>Include Phone Number?</label>
       <input
         type="checkbox"
         id="userinput"
@@ -41,7 +46,7 @@
       >
       <div class="error">{{ $errors->first('phonenumber') }}</div>
 
-      <label>* Include Age?</label>
+      <label>Include Age?</label>
       <input
         type="checkbox"
         id="userinput"
@@ -49,7 +54,7 @@
       >
       <div class="error">{{ $errors->first('age') }}</div>
 
-      <button type="submit" class="btn users">Generate</button>
+      <button type="submit" class="btn-users">Generate</button>
 
       <div class="error">
         @if(count($errors) > 0)

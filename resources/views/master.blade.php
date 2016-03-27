@@ -11,43 +11,30 @@
 
     <link href='/css/main.css' rel='stylesheet'>
 
-    {{-- Yield any page specific CSS files or anything else you might want in the <head> --}}
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600' rel='stylesheet' type='text/css'>
+
     @yield('head')
 
 </head>
 <body>
-
     <header>
-        <a href='/'>
-        <img
-        src='http://making-the-internet.s3.amazonaws.com/laravel-foobooks-logo@2x.png'
-        style='width:300px'
-        alt='Foobooks Logo'>
-        </a>
+      <nav>
+          <ul>
+              <li><a href='/'>Home</a></li>
+              <li><a href='/lorem-ipsum'>Generate lorem ipsum</a></li>
+              <li><a href='/user-generator'>Generate random users</a></li>
+          </ul>
+      </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href='/books'>View all books</a></li>
-            <li><a href='/book/create'>Add a new book</a></li>
-        </ul>
-    </nav>
-
     <section>
-        {{-- Main page content will be yielded here --}}
         @yield('content')
     </section>
 
     <footer>
-        &copy; {{ date('Y') }} &nbsp;&nbsp;
-        <a href='https://github.com/susanBuck/foobooks' class='fa fa-github' target='_blank'> View on Github</a> &nbsp;&nbsp;
-        <a href='http://foobooks.dwa15-practice.biz/' class='fa fa-link' target='_blank'> View Live</a>
+        &copy; {{ date('Y') }} Brandon Darby
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-    {{-- Yield any page specific JS files or anything else you might want at the end of the body --}}
     @yield('body')
 
 </body>

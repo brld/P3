@@ -3,8 +3,7 @@
 Route::group(['middleware' => ['web']], function () {
 
   Route::get('/', function () {
-    #return view('welcome');
-    return 'Project 3';
+    return view('index');
   });
 
   Route::get('/lorem-ipsum', 'LoremController@getLorem');
@@ -16,7 +15,7 @@ Route::group(['middleware' => ['web']], function () {
   Route::post('/user-generator', 'LoremController@postUser');
 
   Route::get('/practice', function () {
-      
+
   });
 
 });
