@@ -29,7 +29,7 @@ class LoremController extends Controller {
     public function postUser(Request $request) {
 
       $this->validate($request, [
-        'people' => 'required|max:99'
+        'people' => 'required|min:1|max:99'
       ]);
       $data = array(
       'faker' => \Faker\Factory::create('en_US'),
