@@ -16,7 +16,7 @@ footer {
     bottom:0;
     height:30px;
     width:100%;
-    background-color:#ccc;
+    background-color:#dadffa;
     text-align:center;
     padding:15px 0px 5px 0px;
 }
@@ -30,18 +30,24 @@ nav ul li {
 
 nav ul li a {
   padding:5px 10px;
-  background-color:#e06868;
+  background-color:#4d79ff;
   text-decoration: none;
-  color: #fff
+  color: #fff;
+  transition: background-color 0.4s ease;
+  font-family:'Raleway', sans-serif;
 }
 
 nav ul li a:hover {
-  background-color: #d55a5a;
+  background-color: #4268f0;
 }
 
 label {
   margin-top:8px;
-  display:block;
+}
+
+.blocklabel {
+  display: block;
+  margin-bottom: 3px;
 }
 
 .error {
@@ -53,7 +59,7 @@ label {
 }
 
 .btn-users,.btn-lorem {
-  background-color: #d35555;
+  background-color: #4d79ff;
   border: none;
   color: white;
   padding: 5px 10px 7px 10px;
@@ -64,6 +70,10 @@ label {
   margin: 20px 0px;
   cursor: pointer;
   border-radius: 5px;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: #4268f0;
 }
 
 p {
@@ -82,27 +92,37 @@ p.pname {
   margin-right: 3%;
 }
 
-#indexh1 {
-  font-size: 225%;
-  margin-right: 3%;
+#logo {
+  height: 30%;
+  width: 30%;
+  margin-left: 3%;
+  margin-top: 2%;
 }
 
 h1 {
   padding-left: 3%;
   font-size: 200%;
   margin-top: 1%;
+  margin-bottom: 2%;
 }
 
 form {
   padding-left: 3%;
-  display: block;
 }
 
 header {
   left:0;
   bottom:0;
   width:100%;
-  background-color:#ccc;
+  background-color:#dadff6;
   padding:5px 0px 5px 0px;
-  border-bottom: 8px solid #bdbdbd;
+  /* border-bottom: 8px solid #bdbdbd; */
+}
+
+div.lorem-input {
+  max-width: 500px;
+}
+
+input {
+  margin-bottom: 2%;
 }

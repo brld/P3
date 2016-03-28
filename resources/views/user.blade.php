@@ -12,7 +12,8 @@
     {{ csrf_field() }}
 
     <div class="user-input">
-      <label>* Number of people (99 Maximum):</label>
+      <label class="blocklabel">* Number of people (99 Maximum):</label>
+      <div class="error">{{ $errors->first('people') }}</div>
       <input
         type="text"
         id="userinput"
@@ -20,45 +21,45 @@
         value="5"
         maxlength="2"
       >
-      <div class="error">{{ $errors->first('people') }}</div>
 
-      <label>Include Address?</label>
+      <div></div>
       <input
         type="checkbox"
         id="userinput"
         name="address"
       >
+      <label>Include Address?</label>
       <div class="error">{{ $errors->first('address') }}</div>
 
-      <label>Include Company?</label>
       <input
         type="checkbox"
         id="userinput"
         name="company"
       >
+      <label>Include Company?</label>
       <div class="error">{{ $errors->first('company') }}</div>
 
-      <label>Include Phone Number?</label>
       <input
         type="checkbox"
         id="userinput"
         name="phonenumber"
       >
+      <label>Include Phone Number?</label>
       <div class="error">{{ $errors->first('phonenumber') }}</div>
 
-      <label>Include Age?</label>
       <input
         type="checkbox"
         id="userinput"
         name="age"
       >
+      <label>Include Age?</label>
       <div class="error">{{ $errors->first('age') }}</div>
 
       <button type="submit" class="btn-users">Generate</button>
 
       <div class="error">
         @if(count($errors) > 0)
-          Whoops! Seems like there's a bit of a problem. Please correct the errors above and try again.
+          It seems like there's a bit of a problem. Please correct the errors above and try again.
         @endif
       </div>
     </div>

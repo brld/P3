@@ -8,7 +8,9 @@
 
 
 @for ($i=0; $i < $numPeople; $i++)
-  <?php require_once '../vendor/fzaninotto/faker/src/autoload.php'; ?>
+  <?php
+    require_once '../vendor/fzaninotto/faker/src/autoload.php';
+  ?>
   <p class="pname">
     <?php echo $faker->name; ?>
   </p>

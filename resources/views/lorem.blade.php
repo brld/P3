@@ -12,7 +12,7 @@
     {{ csrf_field() }}
 
     <div class="lorem-input">
-      <label>* Number of paragraphs (99 Maximum):</label>
+      <label class="blocklabel">* Number of paragraphs (99 Maximum):</label>
       <input
         type="text"
         id="loreminput"

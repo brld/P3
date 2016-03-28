@@ -1,9 +1,11 @@
 <!doctype html>
 <html>
-<head>
+<head profile="http://www.w3.org/2005/10/profile">
     <title>
         @yield('title','Developer Helper')
     </title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
     <meta charset='utf-8'>
 
@@ -11,7 +13,7 @@
 
     <link href='/css/main.css' rel='stylesheet'>
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600|Raleway:400,700' rel='stylesheet' type='text/css'>
 
     @yield('head')
 
@@ -21,8 +23,8 @@
       <nav>
           <ul>
               <li><a href='/'>Home</a></li>
-              <li><a href='/lorem-ipsum'>Generate lorem ipsum</a></li>
-              <li><a href='/user-generator'>Generate random users</a></li>
+              <li><a href='/lorem-ipsum'>Generate Lorem Ipsum</a></li>
+              <li><a href='/user-generator'>Generate Random Users</a></li>
           </ul>
       </nav>
     </header>
