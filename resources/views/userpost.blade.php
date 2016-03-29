@@ -7,32 +7,19 @@
 @section('content')
 
 
-@for ($i=0; $i < $numPeople; $i++)
-  <?php
-    require_once '../vendor/fzaninotto/faker/src/autoload.php';
-  ?>
+
+  @foreach ($allUsers as $index)
   <p class="pname">
-    <?php echo $faker->name; ?>
+    {{$index['name']}}
   </p>
   <p>
-  <?php
-  if ($includeAddress == TRUE) {
-    echo $faker->address()."<br>";
-  }
-  if ($includePhoneNumber == TRUE) {
-    echo $faker->phoneNumber()."<br>";
-  }
-  if ($includeCompany == TRUE) {
-    echo "has a job at ".$faker->company()."<br>";
-  }
-  if ($includeAge == TRUE) {
-    echo $faker->numberBetween($min = 20, $max = 80)." years old<br>";
-  }
-
-  ?>
+    {{$index['address']}}<br>
+    Works at {{$index['company']}}<br>
+    {{$index['phonenumber']}}<br>
+    {{$index['age']}} years old<br>
   <br>
-@endfor
-</p>
+  @endforeach
+  </p>
 
 <br><br><br>
 @stop
