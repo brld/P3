@@ -1,17 +1,38 @@
-# Developer Heper
+# Developer Helper
 
 ## Live URL:
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+[p3.plezza.com] (p3.plezza.com)
 
-## Contributing
+## Description
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+This project allows users to generate various things that would be helpful to a developer, such as filler lorem ipsum text, randomly generated users, or easy to remember xkcd passwords. This project makes use of the MVC pattern (Model, view, controller) and uses Laravel 5's controllers, routes, and views.
 
-## Security Vulnerabilities
+## Demo
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+TBA
 
-## License
+## Details for the teaching team
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Navigation bar is global across all pages for easy navigation after generating anything.
+All HTML and CSS validates with no warnings.
+The logo was made by me.
+NOTE: I had to URL encode the | character for importing google fonts with %7C in order to prevent an HTML error.
+
+## Features
+
+Lorem Ipsum filler text generator
+Random User Generator
+xkcd Password Generator
+Client side validation
+Server side validation
+
+## Outside resources used
+
+CSS Reset: [http://www.stackoverflow.com] (http://www.stackoverflow.com)
+
+fzazinotto/faker: [https://packagist.org/packages/fzaninotto/faker] (https://packagist.org/packages/fzaninotto/faker)
+
+badcow/lorem-ipsum: [https://packagist.org/packages/badcow/lorem-ipsum] (https://packagist.org/packages/badcow/lorem-ipsum)
+
+Fonts: [https://www.google.com/fonts] (https://www.google.com/fonts)

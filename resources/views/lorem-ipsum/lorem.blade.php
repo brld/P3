@@ -24,7 +24,7 @@
         value="3"
         maxlength="2"
       >
-
+      <br>
       <button type="submit" class="btn-submit">Generate</button>
 
       <div class="error">
