@@ -10,22 +10,25 @@ This project allows users to generate various things that would be helpful to a 
 
 ## Demo
 
-TBA
+[https://youtu.be/oGA-6J4swMk] (https://youtu.be/oGA-6J4swMk)
 
 ## Details for the teaching team
 
 Navigation bar is global across all pages for easy navigation after generating anything.
+
 All HTML and CSS validates with no warnings.
+
 The logo was made by me.
+
 NOTE: I had to URL encode the | character for importing google fonts with %7C in order to prevent an HTML error.
 
 ## Features
 
-Lorem Ipsum filler text generator
-Random User Generator
-xkcd Password Generator
-Client side validation
-Server side validation
+* Lorem Ipsum filler text generator
+* Random User Generator
+* xkcd Password Generator
+* Client side validation
+* Server side validation
 
 ## Outside resources used
 
