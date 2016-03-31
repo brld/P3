@@ -20,6 +20,8 @@ All HTML and CSS validates with no warnings.
 
 The logo was made by me.
 
+The phone numbers for random users are not toll free as toll free numbers were not functional.
+
 NOTE: I had to URL encode the | character for importing google fonts with %7C in order to prevent an HTML error.
 
 ## Features
