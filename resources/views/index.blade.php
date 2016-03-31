@@ -13,7 +13,7 @@
     <br><br>
     Random Users can be used to fill in databases or spreadsheets with randomly generated user information with various indentifying information such as an address, a company, and an age.
     <br><br>
-    An xkcd password is a password specifically designed to be easy to remember by the user, but hard to impossible to crack by a computer.
+    An xkcd password is a high entropy password specifically designed to be easy to remember by the user and even more secure than a more random but shorter password. It uses common english words to generate each password.
     <br>
     </p>
 @stop

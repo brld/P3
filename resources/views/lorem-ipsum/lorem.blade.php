@@ -11,8 +11,12 @@
 
     {{ csrf_field() }}
 
-    <div class="lorem-input">
+    <div class="input">
       <label class="blocklabel">* Number of paragraphs (99 Maximum):</label>
+
+      {{-- Errors outputted below for easier reading by the user --}}
+
+      <div class="error">{{ $errors->first('number') }}</div>
       <input
         type="text"
         id="loreminput"
@@ -20,9 +24,8 @@
         value="3"
         maxlength="2"
       >
-      <div class="error">{{ $errors->first('number') }}</div>
 
-      <button type="submit" class="btn-lorem">Generate</button>
+      <button type="submit" class="btn-submit">Generate</button>
 
       <div class="error">
         @if(count($errors) > 0)

@@ -11,8 +11,16 @@
 
     {{ csrf_field() }}
 
-    <div class="password-input">
+    {{-- NOTE: I add the possibility to generate errors for all
+      of the inputs although I do not use any of them (other then
+      the text input) as it will make it easier to activate them
+      later if I do need to generate errors for all of them. --}}
+
+    <div class="input">
       <label class="blocklabel">* Number of words (2 Minimum, 9 Maximum):</label>
+
+      {{-- Errors outputted below for easier reading by the user --}}
+
       <div class="error">{{ $errors->first('inputWords') }}</div>
       <input
         type="text"
@@ -28,7 +36,7 @@
       <input type="checkbox" name="symbolGen" value="Symbol" id="symbolGen">
       <label>Include a symbol?</label><br>
 
-      <button type="submit" class="btn-password">Generate</button>
+      <button type="submit" class="btn-submit">Generate</button>
 
       <div class="error">
         @if(count($errors) > 0)

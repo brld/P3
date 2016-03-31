@@ -8,6 +8,8 @@
 
 <h1>Here is your Lorem Ipsum!</h1>
 <p>
+
+  {{-- Outputting the lorem ipsum for the user --}}
   <?php echo implode('<p>', $paragraphs); ?>
 </p>
 <br><br><br>
