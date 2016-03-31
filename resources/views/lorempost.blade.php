@@ -6,13 +6,9 @@
 
 @section('content')
 
+<h1>Here is your Lorem Ipsum!</h1>
 <p>
-<?php
-$generator = new \Badcow\LoremIpsum\Generator();
-$paragraphs = $generator->getParagraphs($number);
-echo implode('<p>', $paragraphs);
-
-?>
-
+  <?php echo implode('<p>', $paragraphs); ?>
+</p>
 <br><br><br>
 @stop

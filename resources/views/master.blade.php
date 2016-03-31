@@ -25,6 +25,7 @@
               <li><a href='/'>Home</a></li>
               <li><a href='/lorem-ipsum'>Generate Lorem Ipsum</a></li>
               <li><a href='/user-generator'>Generate Random Users</a></li>
+              <li><a href='/xkcd'>Generate xkcd Passwords</a></li>
           </ul>
       </nav>
     </header>
