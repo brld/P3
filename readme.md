@@ -2,7 +2,7 @@
 
 ## Live URL:
 
-[p3.plezza.com] (p3.plezza.com)
+[p3.plezza.com] (http://p3.plezza.com)
 
 ## Description
 
